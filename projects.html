@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Sujjal Chapagain</title>
+  <meta name="description" content="Sujjal Chapagain — Computer Science and Mathematics student at the University of Southern Mississippi. Research on low-rank compression of large language models; projects in AI, machine learning and software.">
+  <meta property="og:title" content="Sujjal Chapagain">
+  <meta property="og:description" content="CS & Math at USM · Efficient and interpretable AI · Projects, research and CV">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='80' font-family='Georgia'>S</text></svg>">
+</head>
+<body>
+<div class="layout">
+
+  <!-- SIDEBAR (same on every page: if you change it, change it in all five files) -->
+  <aside class="sidebar">
+   <div class="sidebar-inner">
+    <!-- PHOTO: put your photo at assets/img/profile.jpg, then replace the <div class="avatar"> line with:
+         <img class="avatar" src="assets/img/profile.jpg" alt="Sujjal Chapagain"> -->
+    <div class="avatar" aria-hidden="true">SC</div>
+
+    <h1>Sujjal Chapagain</h1>
+    <p class="title">B.S. Computer Science &amp; Mathematics<br>The University of Southern Mississippi</p>
+
+    <ul class="meta">
+      <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Hattiesburg, Mississippi, USA</li>
+      <li><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><a href="mailto:sujalchapagain02@gmail.com">sujalchapagain02@gmail.com</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg><a href="https://github.com/Sujjal1">github.com/Sujjal1</a></li>
+      <!-- LINKEDIN: uncomment and put in your profile URL
+      <li><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg><a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a></li>
+      -->
+    </ul>
+
+    <div class="actions">
+      <a class="btn" href="projects.html">View my projects</a>
+      <a class="btn btn-outline" href="files/cv/Sujjal_Chapagain_CV.pdf">Download CV</a>
+    </div>
+
+    <nav class="toc" aria-label="Pages">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="projects.html" class="active" aria-current="page">Projects</a>
+      <a href="honors.html">Honors &amp; leadership</a>
+      <a href="cv.html">CV &amp; documents</a>
+    </nav>
+   </div>
+  </aside>
+
+  <main>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <!-- TO ADD A PROJECT: copy one <article class="card"> ... </article> block and edit it. -->
+
+      <p class="group-label">AI systems</p>
+
+      <article class="card">
+        <div class="card-head"><h3>Companion: a fully offline voice AI agent</h3><span class="when">2026</span></div>
+        <p>A privacy-first voice assistant for Linux that runs entirely on local hardware: Whisper for speech-to-text, a local LLM through Ollama, and Piper for speech. It can search files, read web pages and control the mouse and keyboard, but asks for spoken confirmation before any action and verifies the speaker's voice first.</p>
+        <p class="why"><strong>Why:</strong> most voice assistants send what you say to the cloud. Companion explores how capable an agent can be with no data leaving the machine, and how to give an LLM real control of a computer safely.</p>
+        <div class="tags"><span>Python</span><span>Ollama</span><span>Whisper</span><span>Piper TTS</span><span>Playwright</span><span>Human-in-the-loop</span></div>
+        <div class="links"><a href="https://github.com/Sujjal1/Project-Companion">GitHub</a></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>AI Helpdesk Assistant for the Mississippi Development Authority</h3><span class="when">Mar – Jun 2026</span></div>
+        <div class="sub">Data engineer, three-person team · Mississippi AI Innovation Hub</div>
+        <p>A retrieval-augmented generation (RAG) proof of concept that answers employees' IT questions directly from the agency's own documents, built on Amazon OpenSearch, Titan embeddings and Amazon Bedrock.</p>
+        <p class="why"><strong>Why:</strong> a small IT team was spending its time on repeat questions whose answers already existed in internal documents.</p>
+        <div class="tags"><span>RAG</span><span>AWS Bedrock</span><span>OpenSearch</span><span>Embeddings</span></div>
+      </article>
+
+      <p class="group-label">Web applications</p>
+
+      <article class="card">
+        <div class="card-head"><h3>CoDrive: shared-car trips and costs</h3><span class="when">2026</span></div>
+        <p>A web app for people who share a car: record trips by odometer, split estimated fuel costs among riders, log expenses and payments, and see who owes what. It includes Google Maps routes, invitation codes for co-owners, and Gemini-powered reading of odometer photos and fuel receipts.</p>
+        <p class="why"><strong>Why:</strong> splitting the cost of a shared car fairly is surprisingly messy without a record of who drove, how far and who paid.</p>
+        <div class="tags"><span>React</span><span>FastAPI</span><span>PostgreSQL</span><span>Google Maps</span><span>Gemini</span><span>Render</span></div>
+        <div class="links"><a href="https://codrive-sujjal.onrender.com/">Live app</a><a href="https://github.com/Sujjal1/trip_planner">GitHub</a></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>ProjectGrad: graduate application workspace</h3><span class="when">2026</span></div>
+        <p>A workspace for planning PhD applications, organized like a file manager: universities → professors → emails, research, notes, tasks and sources. Every research claim carries its source link, and deadlines, rankings and funding notes live per program. It also exposes MCP tools so an AI assistant can read and update the workspace.</p>
+        <p class="why"><strong>Why:</strong> applying to PhD programs means tracking dozens of professors, deadlines and funding rules, each of which needs a source you can check later.</p>
+        <div class="tags"><span>Next.js</span><span>TypeScript</span><span>Cloudflare Workers</span><span>D1 / Drizzle</span><span>MCP</span></div>
+        <div class="links"><a href="https://github.com/Sujjal1/goGrad">GitHub</a></div>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>ReefCall: Mississippi Sound conditions</h3><span class="when">2026</span></div>
+        <div class="sub">Team project</div>
+        <p>A free, plain-language website on conditions in the Mississippi Sound (salinity, water temperature, river flow, tides, beach advisories and oyster-area criteria), rebuilt automatically every four hours from public USGS, NOAA and NWS data.</p>
+        <p class="why"><strong>Why:</strong> the data that oyster harvesters, shrimpers, anglers and beachgoers need is public but scattered across agency sites and hard to read.</p>
+        <div class="tags"><span>Python</span><span>Astro</span><span>React</span><span>GitHub Actions</span><span>Public data</span></div>
+        <div class="links"><a href="https://github.com/abhiyan100/reefcall">GitHub</a></div>
+      </article>
+
+      <p class="group-label">Data science</p>
+
+      <article class="card">
+        <div class="card-head"><h3>Electricity demand forecasting</h3><span class="when">2026</span></div>
+        <div class="sub">AI4ALL team project (Group 11A)</div>
+        <p>Forecasting electricity demand one day, one week and one month ahead from U.S. Energy Information Administration data merged with weather and lagged-demand features. We compared linear regression, Random Forest and XGBoost, and served the results in a Streamlit dashboard.</p>
+        <p class="why"><strong>Why:</strong> grid operators need to know demand ahead of time to balance supply, especially as more power comes from weather-dependent solar and wind.</p>
+        <div class="tags"><span>pandas</span><span>scikit-learn</span><span>XGBoost</span><span>Streamlit</span></div>
+        <div class="links"><a href="https://github.com/IreneGallini/AI4ALL-Group-11A">GitHub</a></div>
+      </article>
+    </section>
+
+    <section id="ml">
+      <h2>Machine learning practice</h2>
+      <p class="sub" style="margin-top:-6px">Smaller projects where I implement core methods myself to understand the math behind them.</p>
+
+      <article class="card">
+        <div class="card-head"><h3>Insurance cost prediction with linear regression from scratch</h3><span class="when">2026</span></div>
+        <p>Predicted medical insurance charges from age and BMI using multivariate linear regression written in NumPy, with my own cost function, gradients and gradient descent rather than a library. After removing outliers with the IQR rule, the model reached R² ≈ 0.86 on non-smokers.</p>
+        <div class="tags"><span>NumPy</span><span>Gradient descent</span><span>Linear regression</span></div>
+        <!-- <div class="links"><a href="https://github.com/Sujjal1/REPO">GitHub</a></div> -->
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Crop yield analysis</h3><span class="when">2026</span></div>
+        <p>Explored how temperature, rainfall, soil pH, fertilizer and planting density relate to rice yield, using correlation analysis and linear regression in scikit-learn.</p>
+        <div class="tags"><span>pandas</span><span>scikit-learn</span><span>EDA</span></div>
+        <!-- <div class="links"><a href="https://github.com/Sujjal1/REPO">GitHub</a></div> -->
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Tumor diagnosis with logistic regression</h3><span class="when">In progress</span></div>
+        <p>Classifying tumors as malignant or benign from diagnostic measurements, building logistic regression step by step.</p>
+        <div class="tags"><span>NumPy</span><span>Logistic regression</span><span>Classification</span></div>
+      </article>
+    </section>
+
+    <footer>© 2026 Sujjal Chapagain · Last updated November 2026</footer>
+  </main>
+</div>
+</body>
+</html>
