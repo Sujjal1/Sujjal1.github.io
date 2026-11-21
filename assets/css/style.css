@@ -213,3 +213,21 @@ main .lead, #about p, #honors ul, #education .edu > div { max-width: 62rem; }
   body.home #about p, body.home .lead { font-size: 1.06rem; }
   body.home .news li { font-size: 1.02rem; }
 }
+
+/* ---------- Profile photo ---------- */
+img.avatar { display: block; object-fit: cover; object-position: center 35%; background: #fff; }
+
+/* ---------- Gallery ---------- */
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(16rem, 100%), 1fr)); gap: 1rem; margin-bottom: 0.5rem; }
+.gallery-group:not(:has(figure)) { display: none; }
+.gallery-group { margin-bottom: 1.5rem; }
+.gallery-group .group-label { margin-top: 0; }
+#gallery:has(figure) .gallery-empty { display: none; }
+.gallery-empty { color: var(--faint); padding: 2.5rem 0; text-align: center; border: 1px dashed var(--line); border-radius: 12px; margin-top: 0.5rem; }
+.photo { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; transition: box-shadow .2s, border-color .2s; }
+.photo:hover { border-color: #c9d4ec; box-shadow: 0 6px 18px rgba(16, 24, 40, .08); }
+.photo a { display: block; }
+.photo img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+.photo figcaption { padding: 0.7rem 0.9rem 0.8rem; display: flex; flex-direction: column; gap: 0.1rem; }
+.photo figcaption strong { font-size: .95rem; }
+.photo figcaption span { color: var(--faint); font-size: .82rem; }

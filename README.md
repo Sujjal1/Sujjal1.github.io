@@ -8,6 +8,9 @@ research.html            research
 projects.html            projects + machine learning practice
 honors.html              honors & leadership
 cv.html                  education, CV and documents
+gallery.html             photos from events, conferences, First-Gen Society
+assets/img/profile.jpg   your profile photo
+assets/img/gallery/      put gallery photos here
 assets/css/style.css     colors, fonts, layout
 assets/img/              put profile.jpg here
 files/cv/                your CV (the "Download CV" button points here)
@@ -38,11 +41,12 @@ git add . && git commit -m "Update site" && git push
 ```
 The site updates within a minute or two.
 
-- **Sidebar:** it is repeated at the top of all five .html files. If you change it (e.g. add LinkedIn), change it in each file.
+- **Sidebar:** it is repeated at the top of all six .html files. If you change it (e.g. add LinkedIn), change it in each file.
 - **New project:** in `projects.html`, copy an `<article class="card">…</article>` block and edit it.
 - **News item:** in `index.html`, add a `<li>` at the top of the News list. Keep about 3–4 items so the home page still fits one screen.
 - **New CV:** replace `files/cv/Sujjal_Chapagain_CV.pdf`, keeping the same file name.
-- **Photo:** add `assets/img/profile.jpg`, then follow the PHOTO comment in the sidebar (in each .html file).
+- **Profile photo:** replace `assets/img/profile.jpg` with a square photo, keeping the same file name.
+- **Gallery photo:** put the photo in `assets/img/gallery/`, then in `gallery.html` copy the `<figure>` example from the comment at the top into the right group and change the file name, title and date. Groups with no photos stay hidden, and "Photos coming soon" disappears once you add the first photo. Clicking a photo opens it full size.
 - **LinkedIn:** remove the comment marks around the LinkedIn line in the sidebar and paste your URL.
 
 To preview locally, open `index.html` in a browser.
